@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu",sans-serif;
+}
+
+body{
+  background-color: #27005D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h3{
+  font-size: 30px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.container{
+  background-color: #9400FF;
+  width: 400px;
+  height: 600px;
+  border-radius: 10px;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar{
+  display: none;
+}
+
+.input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  padding: 10px;
+  -moz-appearance: textfield;
+  background: #27005D;
+  border-radius: 10px;
+  width: 60px;
+  border:0;
+  color: rgb(175, 137, 190);
+  font-size: 30px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+input[type=number]:focus{
+  outline: 0;
+  border:0;
+}
+
+.listview{
+  width: 100%;
+  list-style: none;
+  margin-top: 4px;
+}
+
+.listitem *{
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listitem span{
+  color: crimson;
+}
+
+.listitem img{
+  aspect-ratio: 1/1;
+  width: 64px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.inf{
+  width: 100%;
+  border-bottom: 2px beige solid;
+  padding-bottom: 2px;
+  margin-bottom: 2px;
+}
+
+.listitem{
+  background-color: whitesmoke;
+  border-radius: 20px;
+  display: flex;
+  margin: 7px;
+}
+
+@media only screen and (max-width: 400px) {
+  .container{
+    width: 100%;
+    height: 100%;
+  }
+}
